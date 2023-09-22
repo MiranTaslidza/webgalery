@@ -1,0 +1,20 @@
+.kartice {
+  width: 400px;
+  height: 400px;
+  margin: 3% 1%;
+  overflow: hidden; /* Sakrijte sadržaj koji prelazi granice */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.image {
+  height: 250px;
+}
+.divImg{
+    margin: 0 auto;
+}
+.card-body{
+    margin: 10px;
+}

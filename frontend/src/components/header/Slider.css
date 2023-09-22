@@ -1,0 +1,52 @@
+.slider {
+  width: 100%;
+  margin-top: 10px;
+}
+.containerSlider{
+  margin: 0 auto;
+  width: 90%;
+  background-color: #eb5638;
+}
+.divImage{
+  height: 700px; /* Maksimalna visina slajdera */
+  width: auto;
+  max-width: 50%;
+
+}
+.divTitle{
+  max-width: 50%;
+  height: 700px;
+  text-align: center;
+}
+.hTitle{
+  margin: 50px;
+  font-size: 100px;
+  color: white;
+}
+.pSubtitle{
+  font-size: 20px;
+  color: white;
+}
+
+
+.slider .carousel-inner .carousel-item img {
+  max-width: 100%; /* Maksimalna širina slike */
+  height: 700px; /* Maksimalna visina slajdera */
+ 
+}
+
+
+/*prikaz dugmiča*/
+.carousel .carousel-indicators button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+ background-color: lightgrey;
+ border-radius: 100%;
+ border: 1px solid black;
+}
+

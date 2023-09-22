@@ -1,0 +1,63 @@
+import React from "react";
+import Layout from "../../components/layout/Layout";
+import "./About.css";
+
+function About() {
+  return (
+    <Layout>
+      <div className="aboutDiv">
+        <div className="aboutTitle">
+          <h1 className="aboutH">
+            About <span>A.R.T. House</span>
+          </h1>
+        </div>
+
+        <div className="clanak">
+      
+          <img
+            src="https://scontent.fbeg5-1.fna.fbcdn.net/v/t1.18169-9/36086_160504833974220_5588602_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=L2DPGvD5YR0AX-3RiOE&_nc_ht=scontent.fbeg5-1.fna&oh=00_AfCZzZG_zzDvexQCiGSpLRzYJpwtD78anucLt3WtSK0gpA&oe=651FE783"
+            className="profileImg"
+          />
+
+          <p>
+            Proident elit labore sit esse esse enim dolor reprehenderit sint
+            cillum enim mollit aute veniam. Amet aliquip excepteur exercitation
+            elit dolor pariatur est adipisicing. Esse ipsum culpa tempor culpa
+            fugiat. Proident dolor excepteur incididunt nostrud Lorem aliquip
+            culpa exercitation deserunt quis voluptate. Adipisicing velit est
+            elit nostrud ut do non. Do aliquip eu non do ea do incididunt sunt
+            cillum ad aute incididunt. Id esse occaecat ullamco incididunt
+            voluptate laboris nostrud qui reprehenderit ex. Do cillum qui
+            commodo amet. Qui proident mollit cillum dolore elit tempor. Laborum
+            cillum ut consectetur ad ut. Mollit proident reprehenderit ullamco
+            nostrud culpa sit amet excepteur. Laboris anim Lorem amet magna
+            aliquip ipsum enim dolor. Excepteur eiusmod proident amet voluptate
+            eiusmod mollit anim tempor laborum non labore ad mollit. Ea commodo
+            labore dolor sint duis. Adipisicing consequat aliqua voluptate minim
+            eu veniam incididunt do anim consequat sint nisi. Ipsum sit sit
+            mollit consequat qui commodo culpa nostrud incididunt sunt fugiat.
+            Tempor voluptate anim sint velit excepteur irure anim ea ex aliqua
+            elit duis cupidatat anim. Elit velit elit ullamco sit adipisicing
+            proident id dolore. Reprehenderit et sint duis fugiat reprehenderit.
+            Duis laboris ea consectetur in voluptate. Nisi do aliquip ut sint
+            voluptate exercitation quis pariatur pariatur. Exercitation
+            consectetur sit ea elit anim aliquip esse commodo ipsum anim.
+            Pariatur do do quis excepteur deserunt enim deserunt nulla occaecat
+            dolor deserunt. Id qui velit quis qui. Nisi sunt aliqua anim
+            deserunt laborum reprehenderit Lorem elit ullamco adipisicing in
+            officia nostrud. Est incididunt tempor irure eiusmod. Nostrud amet
+            nulla culpa nisi. Magna commodo laborum laboris ut nostrud nostrud
+            magna eu nulla nisi veniam. Cillum ea ea ullamco irure ea amet
+            fugiat aliqua adipisicing. Qui aute elit aute occaecat qui ex nulla
+            consectetur deserunt elit voluptate excepteur officia. Sint
+            consectetur elit irure mollit qui. In qui eiusmod tempor pariatur.
+            Lorem qui non dolor duis esse exercitation tempor tempor ad elit
+            labore qui nulla occaecat.
+          </p>
+        </div>
+      </div>
+    </Layout>
+  );
+}
+
+export default About;
