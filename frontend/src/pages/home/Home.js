@@ -26,6 +26,7 @@ function Home() {
 
   return (
     <Layout showSlider={true}>
+   
       <ImgCard data={data}/>
     </Layout>
   );
