@@ -6,11 +6,15 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./Slider.css";
 
-import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+import {
+  EffectCoverflow,
+  Pagination,
+  Navigation,
+  Autoplay,
+} from "swiper/modules";
 
 function Header() {
   const [data, setData] = useState([]); // State za čuvanje podataka iz baze
-  const [swiper, setSwiper] = useState(null); // Dodajte state za Swiper instancu
 
   // Dohvaćanje podataka
   useEffect(() => {
@@ -30,30 +34,19 @@ function Header() {
     fetchData();
   }, []);
 
-
-
-  // Postavljanje automatskog prebacivanja slajdova
-  useEffect(() => {
-    if (swiper) {
-      const interval = setInterval(() => {
-        if (swiper) {
-          swiper.slideNext(); // Prebaci se na sledeći slajd
-        }
-      }, 3000); // Promenite vreme kašnjenja prema svojim potrebama (npr. 3000 ms = 3 sekunde)
-
-      // Pauziraj automatsko prebacivanje kad komponenta unmounts
-      return () => clearInterval(interval);
-    }
-  }, [swiper]);
-
   return (
     <>
       <div className="container">
         <Swiper
-          effect={"coverflow"}
-          grabCursor={true}
-          centeredSlides={true}
+          //beskonačna vrti
           loop={true}
+          modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
+          //efekat
+          effect={"coverflow"}
+          //za pomjeranje kursorom miša
+          grabCursor={true}
+          //da je klizač
+          centeredSlides={true}
           slidesPerView={"auto"}
           coverflowEffect={{
             rotate: 0,
@@ -61,15 +54,19 @@ function Header() {
             depth: 100,
             modifier: 2.5,
           }}
+          //prikazivanje stranice slidera
           pagination={{ el: ".swiper-pagination", clickable: true }}
           navigation={{
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
             clickable: true,
           }}
-          modules={[EffectCoverflow, Pagination, Navigation]}
+          autoplay={{
+            delay: 200,
+            pauseOnMouseEnter: true,
+            disableOnInteraction: false,
+          }}
           className="swiper_container"
-          onSwiper={(swiper) => setSwiper(swiper)} // Postavi Swiper instancu u state
         >
           {data
             .filter((slide) => !slide.slide)
