@@ -1,20 +1,35 @@
 .kartice {
-  width: 400px;
-  height: 400px;
-  margin: 3% 1%;
+  width: 250px;
+  height: 300px;
+  margin: 5px 1%;
   overflow: hidden; /* Sakrijte sadržaj koji prelazi granice */
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  padding: 10px;
+  padding: 5px;
   transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .image {
-  height: 250px;
+  height: 150px;
 }
 .divImg{
     margin: 0 auto;
 }
 .card-body{
     margin: 10px;
+    height: 100px;
+    padding: 0;
+    border-top: 1px solid lightgrey;
+
 }
+
+.card-body h1{
+    font-size: 20px;
+
+
+}
+
+.card-body p{
+    font-size: 11px;
+    margin: 5px;
+  }

@@ -36,7 +36,7 @@ function Header() {
 
   return (
     <>
-      <div className="container">
+      <div className="container container-slider">
         <Swiper
           //beskonačna vrti
           loop={true}
@@ -62,7 +62,7 @@ function Header() {
             clickable: true,
           }}
           autoplay={{
-            delay: 200,
+            delay: 2000,
             pauseOnMouseEnter: true,
             disableOnInteraction: false,
           }}

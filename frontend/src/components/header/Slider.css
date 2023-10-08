@@ -52,9 +52,9 @@ body {
   background: var(--bg);
 }
 
-.container {
-  max-width: 124rem;
-  padding: 4rem 1rem;
+.container-slider {
+  max-width: 70%;
+  padding: 10px 1rem;
   margin: 0 auto;
 }
 
@@ -65,36 +65,40 @@ body {
 }
 
 .swiper_container {
-  height: 52rem;
-  padding: 2rem 0;
+  height: 22rem;
+  padding: 10px 0;
   position: relative;
 }
 
 .swiper-slide {
-  width: 37rem;
-  height: 42rem;
+  width:auto;
+  height:10rem;
   position: relative;
+  
 }
 
 @media (max-width: 500px) {
   .swiper_container {
-    height: 47rem;
+    height: 19rem;
   }
   .swiper-slide {
     width: 28rem !important;
-    height: 36rem !important;
+    height: 19rem !important;
   }
   .swiper-slide img {
     width: 28rem !important;
-    height: 36rem !important;
+    height: 19rem !important;
+    
   }
 }
 
 .swiper-slide img {
-  width: 37rem;
-  height: 42rem;
+
+  width: auto;
+  height: 18rem;
   border-radius: 2rem;
   object-fit: cover;
+  
 }
 
 .swiper-slide-shadow-left,

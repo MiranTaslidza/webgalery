@@ -12,7 +12,10 @@ function ImgCard({data}) {
             </div>
             <div className="card-body">
               <h1>{product.title}</h1>
-              <p className="card-text">{product.subTitle}</p>
+              <p><b>Opis:</b> {product.subtitle}</p>
+              <p><b>Width</b> {product.width}cm <b>Height</b> {product.height}cm</p>
+              <p><b>Cinena</b> {product.price} €</p>
+              
             </div>
           </div>
         ))}

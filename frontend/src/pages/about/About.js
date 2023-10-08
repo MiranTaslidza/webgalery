@@ -15,7 +15,7 @@ function About() {
         <div className="clanak">
       
           <img
-            src="https://scontent.fbeg5-1.fna.fbcdn.net/v/t1.18169-9/36086_160504833974220_5588602_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=L2DPGvD5YR0AX-3RiOE&_nc_ht=scontent.fbeg5-1.fna&oh=00_AfCZzZG_zzDvexQCiGSpLRzYJpwtD78anucLt3WtSK0gpA&oe=651FE783"
+            src="https://scontent-vie1-1.xx.fbcdn.net/v/t31.18172-8/53780_160505523974151_5562920_o.jpg?_nc_cat=103&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=p8l-hr7lzuEAX8QVXLz&_nc_ht=scontent-vie1-1.xx&oh=00_AfCGeAoRkZj_xPljmtzgJdmgUAfMSGM272I2lvBOetX7Bg&oe=654A3DD4"
             className="profileImg"
           />
 
