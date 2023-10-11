@@ -13,29 +13,41 @@ function Contact() {
           <div className="info">
             <div className="divBlur">
               <div className="infoDiv">
-                <img className="infoImg" src={location} alt="" />
-                <p className="infoHelding"> Address</p>
+                <div className="infoDivHelding">
+                  <img className="infoImg" src={location} alt="" />
+                  <p className="infoHelding">Address</p>
+                </div>
+                <div>
+                  <p className="pInfo">Rade Bitange 18 Mostar 88000</p>
+                  <p className="pInfo">Bosna i Hercegovina</p>
+                </div>
               </div>
-              <p className="pInfo">Rade Bitange 18 Mostar 88000</p>
-              <p className="pInfo">Bosna i Hercegovina</p>
 
               <div className="infoDiv">
-                <img className="infoImg" src={phone} alt="" />
-                <p className="infoHelding">Lets Talk</p>
+                <div className="infoDivHelding">
+                  <img className="infoImg" src={phone} alt="" />
+                  <p className="infoHelding">Lets Talk</p>
+                </div>
+                <div>
+                  <p className="pInfo">+387 63 111 222 </p>
+                </div>
               </div>
-              <p className="pInfo">+387 63 111 222 </p>
 
               <div className="infoDiv">
-                <img className="infoImg" src={email} alt="" />
-                <p className="infoHelding">Mail</p>
+                <div className="infoDivHelding">
+                  <img className="infoImg" src={email} alt="" />
+                  <p className="infoHelding">Mail</p>
+                </div>
+                <div>
+                  <p className="pInfo">neko@gmail.com </p>
+                </div>
               </div>
-              <p className="pInfo">neko@gmail.com </p>
             </div>
           </div>
 
           <div className="sendMail">
             <div className="sendForm">
-              <h1>Send us a message</h1> <br />
+              <h1>Send us a message</h1> 
               <div className="mb-3 formDiv">
                 <label
                   htmlFor="exampleFormControlInput1"
@@ -96,7 +108,6 @@ function Contact() {
                 <button className="btn btn-primary btn-lg" type="button">
                   Send mail
                 </button>
-
               </div>
             </div>
           </div>
