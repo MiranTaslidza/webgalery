@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import Layout from '../../components/layout/Layout'; // Uvezite svoju Layout komponentu ovde
 import ImgCard from '../../components/imgCard/ImgCard'
 
 
@@ -25,10 +24,10 @@ function Home() {
   }, []);
 
   return (
-    <Layout showSlider={true}>
+    
    
       <ImgCard data={data}/>
-    </Layout>
+
   );
 }
 

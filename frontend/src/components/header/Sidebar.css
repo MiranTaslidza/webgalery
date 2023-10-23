@@ -1,0 +1,76 @@
+/* Sidebar.css */
+.sidebar {
+    width: 3%; /* Početna širina */
+    height: 40px; /* Minimalna visina za ikonu */
+    background-color: #333;
+    color: #fff;
+    overflow: hidden;
+    transition: height 0.3s;
+    position: fixed;
+    top: 10px;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .sidebar.expanded {
+    height: 40%; /* Visina kada je prošireno na cijelu visinu */
+    width: 10%;
+  }
+  
+  .toggle-button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    width: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    position: absolute; /* Postavite ikonu na gornji lijevi kut */
+    top: 0;
+    left: 10p;
+  }
+  
+  .toggle-button.right {
+    left: 200%; /* Postavite ikonu na gornju desnu stranu */
+    top: 10px;
+  }
+  
+  .toggle-button.expanded {
+    left: auto;
+    right: 0; /* Postavite ikonu na desnu stranu kad je proširen */
+  }
+  
+  nav {
+    padding-top: 30px; /* Podešavanje prostora za ikonu */
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 10px 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+    visibility: hidden; /* Inicijalno sakrijte linkove */
+  }
+  
+  nav a:hover {
+    background-color: #444;
+  }
+  
+  /* Stilovi za linkove kada je sidebar proširen */
+  .sidebar.expanded nav a {
+    visibility: visible; /* Prikažite linkove kad je sidebar proširen */
+  }
+  

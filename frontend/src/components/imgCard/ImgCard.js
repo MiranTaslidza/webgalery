@@ -1,4 +1,19 @@
+import React from "react";
+import PropTypes from "prop-types";
 import "./ImgCard.css";
+
+ImgCard.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      image: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      subtitle: PropTypes.string.isRequired,
+      width: PropTypes.number.isRequired,
+      height: PropTypes.number.isRequired,
+      price: PropTypes.number.isRequired,
+    })
+  ).isRequired,
+};
 
 function ImgCard({data}) {
 

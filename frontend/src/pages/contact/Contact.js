@@ -2,12 +2,11 @@ import React from "react";
 import location from "../../icon/location.png";
 import phone from "../../icon/phone.png";
 import email from "../../icon/email.png";
-import Layout from "../../components/layout/Layout";
 import "./Contact.css";
 
 function Contact() {
   return (
-    <Layout>
+    
       <div className="container">
         <div className="row">
           <div className="info">
@@ -113,7 +112,7 @@ function Contact() {
           </div>
         </div>
       </div>
-    </Layout>
+
   );
 }
 
